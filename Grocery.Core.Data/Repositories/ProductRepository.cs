@@ -7,7 +7,7 @@ namespace Grocery.Core.Data.Repositories
 {
     public class ProductRepository : DatabaseConnection, IProductRepository
     {
-        private readonly List<Product> products;
+        private readonly List<Product> products = [];
         public ProductRepository()
         {
             //ISO 8601 format: date.ToString("o", CultureInfo.InvariantCulture)
